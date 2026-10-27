@@ -44,9 +44,8 @@ review it separately and do not add untrusted pull-request builds to a privilege
 untrusted-PR execution policy.
 
 Reports can contain paths, URLs, source-derived facts, and caller-selected data.
-Only analyze artifacts and publish reports you are authorized to share. Do not
-rely on REA inferring secrets from their names. Review artifact access and
-retention for your repository; the example retains reports for seven days.
+Review artifact access and retention for your repository; the example retains
+reports for seven days.
 
 ## Failure, partial results, and unsupported capabilities
 

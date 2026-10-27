@@ -315,14 +315,7 @@ REA'yı kullanan, hata bildiren, özellik talep eden, derlemeleri test eden ve d
 
 ## Sorumluluk reddi
 
-Sorumlu kullanım yönergeleri için [DISCLAIMER.md](../../DISCLAIMER.md) dosyasına bakın.
-
-REA; yasal araştırma, eğitim, birlikte çalışabilirlik, yazılımın korunması ve sahibi olduğunuz ya da inceleme yetkiniz bulunan yazılımların analizi için tasarlanmıştır.
-
-Projenin yasa dışı veya yetkisiz kullanıma ilişkin tutumu tüm REA sürümleri,
-dağıtım kanalları ve platformlar için geçerlidir; her kopya geçerli lisanslarını
-korur.
-
+See [DISCLAIMER.md](../../DISCLAIMER.md) for warranty, liability, and third-party licensing notes.
 ## Katkıda bulunma
 
 REA'ya katkınızı bekliyoruz! Hata bildirmek veya özellik önermek için bir [issue açın](https://github.com/morluto/rea/issues); kodu veya belgeleri geliştirmek için bir [pull request gönderin](https://github.com/morluto/rea/pulls).

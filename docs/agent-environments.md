@@ -1029,7 +1029,7 @@ unavailable, and `--replay-only` for pure replay; it
 says which applies to this bundle, with the error code and message when the
 state is unavailable, and that neither is emulation and served
 content is untrusted data. It states that the recorded content belongs to the
-captured application and must not be published without the rights to it.
+captured application.
 
 ## Measure fidelity against the application
 

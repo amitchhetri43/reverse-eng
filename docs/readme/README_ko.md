@@ -321,12 +321,7 @@ REA를 사용하고, 버그를 보고하고, 기능을 요청하고, 빌드를 �
 
 ## 면책 조항
 
-책임 있는 사용에 관한 안내는 [DISCLAIMER.md](../../DISCLAIMER.md)를 참고하세요.
-
-불법적이거나 허가되지 않은 사용에 대한 프로젝트의 입장은 모든 REA 버전, 배포 채널, 플랫폼에 적용되며, 각 사본에는 해당 라이선스가 그대로 유지됩니다.
-
-REA는 법을 준수하는 연구, 교육, 상호운용성 확보, 소프트웨어 보존, 그리고 본인이 소유하거나 조사 권한을 가진 소프트웨어의 분석을 위한 도구입니다.
-
+See [DISCLAIMER.md](../../DISCLAIMER.md) for warranty, liability, and third-party licensing notes.
 ## 기여
 
 REA에 도움을 보태 주세요! [issue를 등록](https://github.com/morluto/rea/issues)해 버그나 기능을 제안하거나, [pull request를 보내](https://github.com/morluto/rea/pulls) 코드와 문서를 개선할 수 있습니다.

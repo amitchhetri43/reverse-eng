@@ -22,13 +22,6 @@ unlikely race or security edge case, record the concrete failure mode, likelihoo
 complexity cost, and the user's buy-in obtained before implementation. Do not
 silently expand scope for theoretical robustness. -->
 
-Follow the [contribution scope](https://github.com/morluto/rea/blob/main/CONTRIBUTING.md#contribution-scope).
-Unresolved scope, authority, side effects, or required verification block
-integration. Link the required maintainer scope decision for new providers or
-capabilities involving target execution, injection, mutation, or protection
-recovery; ordinary fixes within existing boundaries may state "not applicable".
-Draft PRs may leave the scope decision pending and the readiness and merge checklists
-unchecked. Maintainers can help resolve open questions.
 
 ## Contract and boundary impact
 
@@ -39,7 +32,6 @@ Use "none" or "not applicable" only when established. -->
   <!-- Name the producer of parsed facts or resources and its affected consumers.
   Summarize superseded paths removed and any distinct policy, lifecycle,
   lazy-loading, or compatibility responsibility retained. -->
-- Contribution scope fit and linked maintainer decision:
 - CLI and MCP/tool-catalog contract:
 - Provider, bridge, target-format, or platform compatibility:
 - Evidence, artifact, provenance, or reconstruction contract:

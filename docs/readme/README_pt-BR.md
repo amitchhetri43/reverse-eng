@@ -319,14 +319,7 @@ Obrigado a todos que usam o REA, relatam bugs, sugerem funcionalidades, testam b
 
 ## Aviso legal
 
-Consulte [DISCLAIMER.md](../../DISCLAIMER.md) para orientações sobre o uso responsável.
-
-O REA destina-se à pesquisa, à educação, à interoperabilidade, à preservação de software e à análise de software que você possui ou está autorizado a examinar, dentro da lei.
-
-The project's position on illegal or unauthorized use covers all REA
-versions, distribution channels, and platforms; each copy retains its
-applicable licenses.
-
+See [DISCLAIMER.md](../../DISCLAIMER.md) for warranty, liability, and third-party licensing notes.
 ## Contribuir
 
 Sua ajuda com o REA é bem-vinda! [Abra uma issue](https://github.com/morluto/rea/issues) para relatar um bug ou sugerir uma funcionalidade, ou [envie um pull request](https://github.com/morluto/rea/pulls) para melhorar o código ou a documentação.
@@ -341,10 +334,7 @@ REA-authored code is licensed under MIT. Third-party material retains its own
 licenses and copyright notices; see [Third-party notices](../../THIRD_PARTY_NOTICES.md)
 for the dependency inventory, preserved license texts, and external-tool terms.
 
-**You must legally obtain and be authorized to use commercial tools**, including
-IDA Pro / Hex-Rays decompilers, Hopper, and JEB, under their applicable licenses.
-REA grants no tool license, key, or activation entitlement. Trials and demos
-remain subject to vendor terms, including user, feature, automation, and output
-sharing restrictions. Cracked copies, stolen keys, unauthorized key sharing,
-and bypassing license restrictions are not authorized. This guidance does not
-amend MIT or third-party licenses.
+Commercial tools, including IDA Pro / Hex-Rays decompilers, Hopper, and JEB, are
+licensed by their vendors. REA grants no tool license, key, or activation
+entitlement; trials and demos remain subject to vendor terms. This notice does
+not amend MIT or third-party licenses.

@@ -26,6 +26,16 @@ fi
 echo "== replacing dist in $INSTALL_ROOT =="
 rsync -a --delete "$FORK_DIR/dist/" "$INSTALL_ROOT/dist/"
 
+# Shipped prose and skill instructions carry the fork's own wording; keep the
+# installed copy in step with the clone.
+for doc in README.md DISCLAIMER.md LICENSE THIRD_PARTY_NOTICES.md CHANGELOG.md; do
+  [[ -f "$FORK_DIR/$doc" ]] && cp "$FORK_DIR/$doc" "$INSTALL_ROOT/$doc"
+done
+if [[ -d "$INSTALL_ROOT/skills/reverse-engineer-anything" ]]; then
+  rsync -a --exclude 'SKILL.md' "$FORK_DIR/.agents/skills/reverse-engineer-anything/references/" \
+        "$INSTALL_ROOT/skills/reverse-engineer-anything/references/"
+fi
+
 echo "== installed version =="
 "$NODE_BIN_DIR/node" -e 'console.log(require(process.argv[1]).version)' "$INSTALL_ROOT/package.json"
 

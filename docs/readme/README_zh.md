@@ -319,13 +319,7 @@ npx rea-agents@latest setup
 
 ## 免责声明
 
-负责任使用的相关指引请见 [DISCLAIMER.md](../../DISCLAIMER.md)。
-
-REA 用于合法的研究、教育、互操作性、软件保存，以及分析你拥有或获准检查的软件。
-
-本项目对非法或未经授权使用的立场涵盖所有 REA 版本、分发渠道和运行平台；
-每份副本仍适用其随附的许可。
-
+See [DISCLAIMER.md](../../DISCLAIMER.md) for warranty, liability, and third-party licensing notes.
 ## 参与贡献
 
 欢迎帮助改进 REA！你可以[提交 issue](https://github.com/morluto/rea/issues) 报告错误或建议功能，也可以[提交 pull request](https://github.com/morluto/rea/pulls) 改进代码或文档。

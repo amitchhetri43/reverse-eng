@@ -401,16 +401,7 @@ testează versiuni și contribuie cu remedieri.
 
 ## Precizări privind utilizarea
 
-Consultă [DISCLAIMER.md](../../DISCLAIMER.md) pentru îndrumări privind utilizarea responsabilă.
-
-Poziția proiectului față de utilizarea ilegală sau neautorizată se aplică tuturor
-versiunilor REA, canalelor de distribuție și platformelor; fiecare copie își
-păstrează licențele aplicabile.
-
-REA este destinat cercetării legale, educației, interoperabilității, conservării
-software-ului și analizei programelor pe care le deții sau pe care ai autorizarea
-să le examinezi.
-
+See [DISCLAIMER.md](../../DISCLAIMER.md) for warranty, liability, and third-party licensing notes.
 ## Contribuții
 
 Ne-ar bucura să contribui la REA! [Deschide un issue](https://github.com/morluto/rea/issues)

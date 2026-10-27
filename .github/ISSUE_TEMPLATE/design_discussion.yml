@@ -13,8 +13,6 @@ body:
         enough to start. Choose "Not sure yet" where needed; maintainers can help
         with technical details, alternatives, and verification.
 
-        Read the [contribution scope](https://github.com/morluto/rea/blob/main/CONTRIBUTING.md#contribution-scope).
-        Unresolved boundaries block integration, not opening a discussion.
 
   - type: checkboxes
     id: before-submitting
@@ -22,8 +20,6 @@ body:
       label: Before submitting
       options:
         - label: I searched the open and closed issues and pull requests for a related discussion.
-          required: true
-        - label: I understand the [contribution scope](https://github.com/morluto/rea/blob/main/CONTRIBUTING.md#contribution-scope) must be reviewed before integration; open questions are welcome here.
           required: true
         - label: This discussion does not include credentials, private samples, or sensitive target data.
           required: true
@@ -74,7 +70,7 @@ body:
       description: >-
         If known, clarify target selection, selected effects, provider boundaries,
         non-goals, or evidence invariants. Leave blank if you need help identifying
-        them. Do not include private samples or proof-of-authorization documents.
+        them.
 
   - type: textarea
     id: options
