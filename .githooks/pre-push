@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+# Refuse every push that would leave this clone except to the owner's fork.
+# Upstream (morluto/rea) is read-only by policy: nothing from this machine or
+# from the fork is ever sent back to it.
+set -euo pipefail
+
+ALLOWED_PREFIX="https://github.com/amitchhetri43/reverse-eng"
+
+while read -r local_ref local_sha remote_ref remote_sha; do
+  remote_url="$(git remote get-url --push "${1:-origin}" 2>/dev/null || true)"
+  case "$remote_url" in
+    "$ALLOWED_PREFIX"*) ;;
+    *)
+      echo "pre-push: blocked push to '$remote_url'" >&2
+      echo "pre-push: only $ALLOWED_PREFIX is an allowed push target" >&2
+      exit 1
+      ;;
+  esac
+done
+exit 0

@@ -9,7 +9,7 @@ import {
 } from "../application/SetupTypes.js";
 import { isUninstallFailure } from "../application/UninstallFailure.js";
 import { homeDirectoryFromEnvironment } from "../config/homeDirectory.js";
-import { isUpdateFailure } from "../application/UpdateFailure.js";
+import { forkUpdateReport } from "../application/ForkUpdate.js";
 import {
   confirmInteractiveSetup,
   renderSetupDryRun,
@@ -167,23 +167,14 @@ const registerMaintenanceCommands = (
   });
   cli.command(CLI_COMMANDS.update, {
     description:
-      "Update this REA installation and verify the installed release",
-    run: ({ formatExplicit }) =>
-      logCliCommand(
-        logger,
-        CLI_COMMANDS.update,
-        async () => {
-          const [{ runUpdate }, { systemUpdateHost }] = await Promise.all([
-            import("../application/Update.js"),
-            import("../application/UpdateRuntime.js"),
-          ]);
-          return runUpdate(
-            PRODUCT_IDENTITY.packageVersion,
-            systemUpdateHost(undefined, undefined, environment),
-            formatExplicit ? "structured" : "human",
-          );
-        },
-        isUpdateFailure,
+      "Report the fork-managed update procedure (never contacts a registry)",
+    run: () =>
+      logCliCommand(logger, CLI_COMMANDS.update, async () =>
+        forkUpdateReport(
+          PRODUCT_IDENTITY.packageVersion,
+          environment,
+          homeDirectoryFromEnvironment(environment, process.platform),
+        ),
       ),
   });
 };

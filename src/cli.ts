@@ -101,15 +101,10 @@ export const createCli = (
         "Ask what software, artifact, protocol, or behavior the user wants to understand, then choose the available investigation capabilities that can produce evidence.",
     },
     sync: false,
-    update: {
-      // Incur's update:false only suppresses notices. Reject its explicit
-      // installer so ambiguous flags cannot bypass REA's verified workflow.
-      install: () => {
-        throw new Error(
-          "Use 'rea update' to update the identified installation. The '--update' alias accepts only global output flags.",
-        );
-      },
-    },
+    // Fork policy: no release checks, no registry traffic, no installer that
+    // could reach npm. Updates are pulled manually from the fork and applied
+    // with scripts/fork-reinstall.sh.
+    update: false,
   });
 
   registerSetupCommands(cli, logger, environment);
